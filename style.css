@@ -74,7 +74,11 @@ main form input[type="text"] {
     outline: none;
 }
 
-main form input[type="submit"] {
+main form .buttons {
+
+}
+
+.buttons input[type="submit"] {
     padding: 0.6rem;
     border-radius: 50px;
     /* border: 1px solid hsla(0, 0%, 75%, 1);  */

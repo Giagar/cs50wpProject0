@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Advanced Search</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="nav-element"><a href="/index.html">Google Search</a></div>
+      </nav>
+      <main>
+        <!-- find the right form action -->
+        <form id="advanced" action="https://images.google.com/" class="">
+          <h2>Find pages with...</h2>
+
+          <!-- what's the real value of name? -->
+         
+          <div class="inputContainer" id="inputContainerAll">
+            <label for="allWords">all these words: </label>
+            <input type="text" name="q" id="allWords" />
+          </div>
+          <div class="inputContainer" id="inputContainerExact">
+            <label for="exactWords">these exact words: </label>
+            <input type="text" name="q" id="exactWords" />
+          </div>
+          <div class="inputContainer" id="inputContainerAny">
+            <label for="anyWords">any of these words: </label>
+            <input type="text" name="q" id="anyWords" />
+          </div>
+          <div class="inputContainer" id="inputContainerNone">
+            <label for="noneWords">none of these words: </label>
+            <input type="text" name="q" id="noneWords" />
+          </div>
+
+          <input type="submit" value="Google Advanced Search" />
+        </form>
+      </main>
+    </div>
+  </body>
+</html>

@@ -34,8 +34,12 @@ nav div {
 
 nav div a {
     text-decoration: none;
-    font-size: .6rem;
+    font-size: .7rem;
     color: var(--mainFontColor);
+}
+
+nav div a:hover {
+    text-decoration: underline;
 }
 
 main {
@@ -81,74 +85,49 @@ main form input[type="submit"] {
 }
 
 /* Google Advanced Search */
+#main-advanced {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #advanced {
     display: block;
-    width: 70%;
-    margin: auto 0;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    /* display: grid;
-    grid-template-areas: 
-        "title title title title"
-        "inputContainerAll inputContainerAll inputContainerAll"
-        "label inputContainerExact inputContainerExact inputContainerExact"
-        "label inputContainerAny inputContainerAny inputContainerAny"
-        "label inputContainerNone inputContainerNone inputContainerNone"
-        ". button button ."
-    ; */
+    width: 1000px;
+    /* border: 1px solid grey; */
 }
 
-/* #advanced h2 {
-    grid-area: title;
+#incipit {
+    padding: 0 0 .5rem .5rem;
 }
-
-#inputContainerAll {
-    grid-area: inputContainerAll;
-}
-
-#inputContainerExact {
-    grid-area: inputContainerExact;
-}
-
-#inputContainerAny {
-    grid-area: inputContainerAny;
-}
-
-#inputContainerNone {
-    grid-area: inputContainerNone;
-} */
 
 .inputContainer {
     display: flex;
     flex-direction: row;
+    /* border: 1px solid grey; */
+    margin: .5rem;
 }
 
 #advanced label {
-    /* border: 1px solid grey; */
-    /* display: inline-block;
-    width: 29%; */
-    flex-basis: 300px;
+    flex-basis: 200px;
+    /* border: 1px solid green; */
+    display: flex;
+    align-items: center;
 }
 
 #advanced input {
-    /* margin: .5rem; */
     border-radius: initial;
     box-shadow: initial;
     border: 1px solid lightgray;
-    /* width: 69%;
-    display: inline-block; */
-    flex: 1;
+    flex: 1 1 600px;
 
 }
 
 #advanced input[type="text"] {
-    /* width: 600px; */
-    height: 50px;
+    height: 40px;
     padding: 0 .2rem;
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
+    margin: 0; 
 }
 
 [type="text"]:focus {
@@ -158,11 +137,11 @@ main form input[type="submit"] {
 #advanced input[type="submit"] {
     padding: 0.6rem;
     border-radius: 50px;
-    /* border: 1px solid hsla(0, 0%, 75%, 1);  */
     border: none;
     font-size: 0.8rem;
     background: hsl(200, 70%, 60%);
     color: white;
-    /* grid-area: button; */
+    margin-top: .5rem;
+    display: block;
+    margin: 0 auto;
 }
-
